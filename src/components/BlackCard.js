@@ -6,6 +6,11 @@ class BlackCard extends Component {
     const {blackResults, blackId} = this.props;
 
     const selectedCriatura = blackResults[blackId];
+
+    if(!selectedCriatura) {
+      return null;
+    }
+
     const fullName = `${selectedCriatura.name.first} ${selectedCriatura.name.last}`;
     const image = selectedCriatura.picture.large;
     const age = selectedCriatura.dob.age;
