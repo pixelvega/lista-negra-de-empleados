@@ -67,6 +67,7 @@ class App extends Component {
 
   render() {
     const blackResults = this.filterThis();
+    const {results} = this.state;
     return (
       <div className="app">
         <header className="app__header">
@@ -78,7 +79,7 @@ class App extends Component {
 
         <main className="app__main">
 
-          <BlackCard blackResults={blackResults} blackId={1} />
+          <BlackCard blackResults={results} blackId={1} />
 
           <BlackList blackResults={blackResults} />
 
