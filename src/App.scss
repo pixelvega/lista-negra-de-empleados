@@ -82,3 +82,15 @@
 .person__city {
   text-transform: capitalize;
 }
+
+
+// >> Detail
+.person--detail {
+  text-align: center;
+  padding-left: 0;
+  
+  .person__image {
+  position: static;
+  margin: 0 auto 24px;
+}
+}
